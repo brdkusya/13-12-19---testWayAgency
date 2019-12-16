@@ -1,0 +1,149 @@
+.quiz {
+	padding-top: 70px;
+	padding-bottom: 250px;
+}
+.quiz__title {
+	margin-bottom: 151px;
+	font-size: 60px;
+	line-height: 122%;
+	text-align: center;
+}
+.quiz__title--accent {
+	color: $accent;
+}
+.quiz__form {
+	position: relative;
+
+	max-width: 910px;
+	margin: 0px auto;
+	box-sizing: border-box;
+	
+	&::before {
+		content: '';
+
+		position: absolute;
+		top: -67px;
+		left: -70px;
+
+		width: 149px;
+		height: 149px;
+
+		background-image: url(../img/oil-1.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	&::after {
+		content: '';
+
+		position: absolute;
+		bottom: -195px;
+		right: 80px;
+
+		width: 263px;
+		height: 249px;
+
+		background-image: url(../img/oil-2.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+}
+.quiz__wrapper {
+	position: relative;
+
+	&::before {
+		content: '';
+
+		position: absolute;
+		top: 40px;
+		right: -255px;
+
+		width: 171px;
+		height: 144px;
+
+		background-image: url(../img/oil-3.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+
+		z-index: -1;
+	}
+	&::after {
+		content: '';
+
+		position: absolute;
+		top: -155px;
+		right: 115px;
+
+		width: 140px;
+		height: 106px;
+
+		background-image: url(../img/oil-4.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		z-index: -1;
+	}
+}
+.quiz__nav {
+	position: relative;
+	margin-right: 15px;
+	text-align: center;
+
+	&::before {
+		content: '';
+
+		position: absolute;
+		top: 90px;
+		left: -180px;
+
+		width: 99px;
+		height: 67px;
+
+		background-image: url(../img/oil-5.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+}
+.quiz__prev,
+.quiz__next,
+.quiz__complete {
+	padding: 0px;
+
+	font-size: 18px;
+	line-height: 89px;
+	letter-spacing: .05em;
+}
+.quiz__prev {
+	display: none;
+	margin-right: 20px;
+
+	font-family: inherit;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000000;
+	opacity: .3;
+	white-space: nowrap;
+
+	background-color: transparent;
+	border: none;
+
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+		opacity: 1;
+		outline: none;
+		transition: opacity .25s ease;
+	}
+	
+	&:active {
+		opacity: .6;
+	}
+}
+.quiz__next {
+	padding-right: 53px;
+	padding-left: 53px;
+}
+.quiz__complete {
+	display: none;
+	padding-right: 83px;
+	padding-left: 83px;
+}

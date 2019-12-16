@@ -1,0 +1,105 @@
+.top-line {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 130px;
+}
+.top-line__left,
+.top-line__right {
+	display: flex;
+	align-items: center;
+}
+.top-line__left {
+	justify-content: space-between;
+	flex-basis: 680px;
+	margin-right: 45px;
+}
+.top-line__right {
+	justify-content: space-between;
+	flex-basis: 420px;
+}
+.top-line__nav {
+	margin-left: 30px;
+}
+.top-line__geo {
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin-right: 10px;
+
+	font-family: inherit;
+	line-height: 16px;
+	color: $accent;
+
+	border: none;
+	border-bottom: 1px dashed $accent;
+	background: transparent;
+
+	cursor: pointer;
+	white-space: nowrap;
+
+	&:hover,
+	&:focus {
+		outline: none;
+		border-bottom: 1px solid $accent;
+	}
+
+	&::before {
+		content: '';
+
+		display: inline-block;
+		width: 8px;
+		height: 10px;
+		margin-right: 9px;
+
+		background-image: url(../img/icons/geo.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+}
+.top-line__contacts {
+	float: right;
+}
+.top-line__number {
+	margin-top: 15px;
+	margin-bottom: 15px;
+
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 27px;
+	text-align: right;
+
+	&::before {
+		content: '';
+		
+		display: inline-block;
+		width: 17.04px;
+		height: 17px;
+		margin-right: 14.96px;
+
+		background-image: url(../img/icons/phone.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+}
+.top-line__call {
+	padding: 0px;
+	padding-right: 28px;
+	padding-left: 28px;
+
+	font-size: 12px;
+	line-height: 42px;
+
+	&::before {
+		top: 2px;
+		
+		box-shadow: 0px 4px 10px #f7c251;
+		border-radius: 21px;
+	}
+
+	&::after {
+		background: linear-gradient(286.62deg, #f6c150 5.23%, #fded9b 97.02%);
+		border-radius: 21px;
+	}
+}

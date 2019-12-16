@@ -1,0 +1,77 @@
+.reviews {
+	padding-top: 12px;
+}
+.reviews__title {
+	margin-bottom: 90px;
+
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 122%;
+	text-align: center;
+}
+.reviews__title--accent {
+	color: $accent;
+}
+.reviews__wrapper {
+	position: relative;
+
+	height: 560px;
+	width: 100%;
+	margin-bottom: 42.43px;
+
+	overflow: hidden;
+}
+
+.reviews__list {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.owl-stage {
+	margin-bottom: 42.43px;
+}
+.reviews__item {
+	& video {
+		border-radius: 10px;
+	}
+}
+.reviews__play {
+	position: absolute;
+	top: 178px;
+	left: 355px;
+
+	width: 194px;
+	height: 194px;
+	padding: 0px;
+	
+	background-color: transparent;
+	background: linear-gradient(293.89deg, #F6C150 35.44%, #FDED9B 94.34%);
+	border: none;
+	border-radius: 100px;
+
+	cursor: pointer;
+
+	&:focus {
+		outline: none;
+		opacity: .8;
+	}
+
+	&:active {
+		background: linear-gradient(293.89deg, rgba(#F6C150, .7) 35.44%, rgba(#FDED9B, .7) 94.34%);
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 66px;
+		left: 66px;
+
+		width: 62px;
+		height: 62px;
+
+		background-image: url(../img/icons/play.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}

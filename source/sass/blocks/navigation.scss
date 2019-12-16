@@ -1,0 +1,31 @@
+.navigation__list,
+.reviews__list.owl-carousel .owl-dots {
+	margin: 0px;
+	margin-bottom: 80px;
+	padding: 0px;
+	text-align: center;
+	list-style: none;
+}
+.navigation__item,
+.reviews__list.owl-carousel button.owl-dot {
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin-right: 11.67px;
+
+	border: 1px solid $text;
+	border-radius: 8px;
+
+	cursor: pointer;
+	&:last-of-type {
+		margin-right: 0px;
+	}
+}
+
+.reviews__list.owl-carousel button.owl-dot.active {
+	background-color: #ffffff;
+}
+
+.reviews__list.owl-carousel .owl-dots.disabled {
+	display: block;
+}

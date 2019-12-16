@@ -1,0 +1,115 @@
+@include font-face("gilroy", "../fonts/GilroyRegular/GilroyRegular");
+@include font-face("gilroy", "../fonts/GilroyBold/GilroyBold", bold);
+
+body {
+    min-width: 320px;
+    margin: 0px;
+    padding: 0px;
+
+    font-family: $d-font;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 16px;
+		color: $text;
+
+		background-color: $bg;
+		background-image: url(../img/bg.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: top center;
+}
+.container {
+    width: 280px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+.btn-shadow {
+	position: relative;
+
+	font-family: inherit;
+	font-weight: bold;
+	text-transform: uppercase;
+	white-space: nowrap;
+
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+
+	z-index: 0;
+
+	&::before {
+		content: '';
+
+		position: absolute;
+		top: 4px;
+		left: 0px;
+
+		display: block;
+		width: 100%;
+		height: 100%;
+
+		background-color: #c49028;
+
+		box-shadow: 0px 4px 50px #ffd57a;
+		border-radius: 100px;
+		z-index: -2;
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0px;
+		left: 0px;
+
+		display: block;
+		width: 100%;
+		height: 100%;
+
+		background: linear-gradient(327.63deg, #f6c150 35.44%, #fded9b 94.34%);
+		border-radius: 100px;
+		z-index: -1;
+	}
+}
+button.btn-shadow:hover,
+button.btn-shadow:focus {
+	outline: none;
+	&::before{
+		opacity: 0;
+		transition: opacity .5s ease;
+	}
+}
+button.btn-shadow:active {
+	&::after {
+		opacity: .7;
+	}
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+	position: absolute;
+
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: no-wrap;
+	clip-path: inset(100%);
+	overflow: hidden;
+}
+
+// От 768px планшетная версия
+@media (min-width: 768px) {
+	.container {
+		width: 640px;
+		padding: 0 64px;
+	}
+}
+
+// От 1200px десктопная версия
+@media (min-width: 1200px) {
+	.container {
+		width: auto;
+		padding: 0 150px;
+	}
+}

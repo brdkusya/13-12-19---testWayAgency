@@ -1,0 +1,37 @@
+.modal__name,
+.modal__phone {
+	margin: 0px;
+}
+.modal input {
+	width: 317px;
+	padding-right: 42px;
+	padding-left: 42px;
+	margin-bottom: 9px;
+
+	background-color: #E8E8E8;
+
+	box-sizing: border-box;
+
+	border: none;
+	border-radius: 100px;
+	
+	font-family: inherit;
+	font-size: 18px;
+	line-height: 89px;
+	color: rgba(#000000, .5);
+}
+.modal__submit {
+	padding-right: 106px;
+	padding-left: 106px;
+	margin-top: 6px;
+	margin-bottom: 39px;
+
+	font-size: 18px;
+	line-height: 89px;
+	letter-spacing: .05em;
+
+	cursor: pointer;
+}
+.modal__descr {
+	line-height: 21px;
+}

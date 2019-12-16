@@ -1,0 +1,28 @@
+.menu__list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.menu__item {
+	margin-right: 37px;
+	&:last-of-type {
+		margin-right: 0px;
+	}
+}
+.menu__link {
+	text-decoration: none;
+	color: $text;
+
+	transition: color .25s ease;
+
+	&:hover,
+	&:focus {
+		color: $accent;
+		outline: none;
+	}
+	
+	&:active {
+		color: #ffdf93;
+	}
+}

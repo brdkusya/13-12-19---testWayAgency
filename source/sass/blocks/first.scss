@@ -1,0 +1,29 @@
+.first {
+	width: 700px;
+	padding-bottom: 250px;
+}
+.first__title {
+	margin-top: 65px;
+	margin-bottom: 35px;
+	font-size: 80px;
+	line-height: 122%;
+}
+.first__title--accent {
+	text-transform: uppercase;
+	color: $accent;
+}
+.first__descr {
+	width: 530px;
+	margin-bottom: 56px;
+
+	font-size: 32px;
+	line-height: 130%;
+}
+.first__btn {
+	padding-right: 80px;
+	padding-left: 80px;
+
+	font-size: 18px;
+	line-height: 89px;
+	letter-spacing: 0.05em;
+}
